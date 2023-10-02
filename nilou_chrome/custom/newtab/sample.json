@@ -1,0 +1,12 @@
+{
+    "sites": [
+        {
+            "name":"Google",
+            "url":"https://google.com"
+        },
+        {
+            "name":"Youtube",
+            "url":"https://youtube.com"
+        }
+    ]
+}

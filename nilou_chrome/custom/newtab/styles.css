@@ -1,0 +1,229 @@
+@font-face {
+    font-family: 'genshin';
+    src: url('./fonts/genshin.ttf');
+    font-style: normal;
+}
+
+body, html {
+    margin: 0;
+}
+
+.background-img {
+    background-image: url('images/first_frame.png');
+    /* Full height */
+    height: 100%; 
+
+    /* Center and scale the image nicely */
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.bg-class {
+    /* Center and scale the image nicely */
+    height: width 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: -100;
+}
+
+.link-holder {
+    background-color: rgba(48, 48, 48, 0.2);
+    margin: auto;
+    margin-bottom: 20px;
+
+    width: fit-content;
+    min-width: 50%;
+    max-width: 80%;
+
+    min-height: 100px;
+    height: fit-content;
+    max-height: 300px;
+
+    text-align: center;
+    backdrop-filter: blur(4px);
+    border-radius: 10px;
+    padding: 20px;
+
+    overflow-y: auto;
+    display: none;
+    scroll-behavior: smooth;
+}
+
+.link-card-container {
+    display: inline-flex;
+    position: relative;
+    top: 0px;
+    width: 100%;
+    height: 100px;
+
+    background-color: rgba(0, 0, 0, 0);
+
+    margin: auto;
+    text-align: center;
+}
+
+.link-card {
+    display: inline-flex;
+    position: relative;
+    top: 0px;
+    width: 150px;
+    height: 100px;
+
+    background-color: rgba(250, 235, 215, 0.274);
+
+    margin: auto;
+    margin-bottom: 15px;
+    margin-right: 10px;
+
+    text-align: center;
+
+    transition: top ease-in 100ms;
+}
+
+.card-name {
+    color: azure;
+
+    font-size: 12px;
+    font-family: 'genshin';
+
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    display: block;
+    position: absolute;
+
+    bottom: 0px;
+    width: 100%;
+    margin: auto;
+    padding-top: 20px;
+
+    opacity: 0;
+
+    transition: opacity ease-in 10ms;
+    transition: bottom ease-in-out 100ms;
+}
+
+.link-card:hover > .card-name {
+    bottom: -25px;
+    opacity: 1;
+}
+
+.link-card:hover {
+    top: -10px;
+}
+
+.card-image {
+    margin: auto;
+    max-width: 90px;
+    max-height: 90px;
+}
+
+.add-new-card {
+    cursor: pointer;
+    display: inline-flex;
+    position: relative;
+    top: 0px;
+    width: 150px;
+    height: 100px;
+
+    background-color: rgba(250, 235, 215, 0.274);
+
+    margin: auto;
+    margin-bottom: 15px;
+    margin-right: 10px;
+
+    text-align: center;
+
+    transition: top ease-in 100ms;
+}
+
+.add-new-card:hover {
+    top: -10px;
+}
+
+.add-new-card:hover > .card-name {
+    bottom: -25px;
+    opacity: 1;
+}
+
+.add-card-image {
+    margin: auto;
+    max-width: 90px;
+    max-height: 90px;
+}
+
+.custom-modal {
+    backdrop-filter: blur(2px);
+    display: flex;
+    visibility: hidden;
+    background-color: rgba(0, 0, 0, 0.384);
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    position: absolute;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.custom-modal-body {
+    background-color: aquamarine;
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+}
+
+.modal-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 2px;
+    margin-right: 2px;
+}
+
+.options-btn {
+    position: absolute;
+    visibility: hidden;
+
+    top: 0;
+    right: 0;
+    width: 20px;
+    height: 20px;
+    background-color: rgba(0, 0, 0, 0.250);
+    border-radius: 3px;
+
+    z-index: 100;
+    transition: visibility ease-in 100ms;
+    transition: background-color ease-in 100ms;
+}
+
+.options-btn:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.link-card:hover > .options-btn {
+    visibility: visible;
+}
+
+.footer-fixed-full-width {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    height: fit-content;
+}
+
+.video-container {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+}

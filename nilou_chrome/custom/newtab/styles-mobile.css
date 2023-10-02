@@ -1,0 +1,41 @@
+@media screen and (max-width: 800px) {
+    .card-name {
+        opacity: 1;
+        font-size: 8px;
+    }
+
+    .link-card {
+        width: 81px;
+        height: 54px;
+    }
+
+    .link-card-container {
+        height: 54px;
+    }
+
+    .card-image {
+        margin: auto;
+        height: 30px;
+        width: auto;
+    }
+
+    .add-new-card {
+        width: 81px;
+        height: 54px;
+    }
+
+    .video-container {
+        object-fit: cover;
+        width: 144vw;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+
+    .options-btn {
+        visibility: visible;
+        width: 15px;
+        height: 15px;
+    }
+}

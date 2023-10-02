@@ -1,0 +1,23 @@
+{
+    "manifest_version": 3,
+    "name": "Nilou Genshin Impact - New Tab",
+    "description": "Add the reading time to Chrome Extension documentation articles",
+    "version": "1.0",
+    "icons": {
+        "16": "images/icon_512.png",
+        "32": "images/icon_512.png",
+        "48": "images/icon_512.png",
+        "128": "images/icon_512.png"
+    },
+    "action": {
+        "default_popup": "custom/popup/index.html",
+        "default_icon": "images/icon_512.png"
+    },
+    "chrome_url_overrides" : {
+        "newtab": "custom/newtab/index.html"
+    },
+    "storage": {
+        "managed_schema": "saved_data.json"
+    },
+    "optional_permissions": ["tabs"]
+}

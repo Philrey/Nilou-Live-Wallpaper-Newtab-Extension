@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+    <link href="styles.css" rel="stylesheet" />
+    <link href="styles-mobile.css" rel="stylesheet" />
+    <link href="bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>New Tab</title>
+</head>
+<body class="background-img">
+    <video class="video-container" autoplay muted loop="loop">
+        <source src="./video/Nilou.webm" type="video/webm">
+        Your browser does not support HTML5 video.
+    </video>
+    <div class="footer-fixed-full-width">
+        <div id="linkContainer" class="link-holder shadow">
+            <div width="100%">
+                <div id="links-holder-id"></div>
+                <!--
+                <div class="link-card">
+                    <img src="./images/icons8_more_64px.png" class="options-btn" alt="" srcset="">
+                    <img class="card-image" src="./images/Noelle.jpg" alt="">
+                    <span class="card-name">Very Long Name Here</span>
+                </div>-->
+            </div>
+        </div>
+    </div>
+
+
+    <div id="mainModal" class="custom-modal">
+        <div id="addSiteModal" class="card custom-modal-body">
+            <!--Add New Site-->
+            <div class="card-body">
+                <div class="card-header">
+                    <button id="btnCloseModalAdd" class="btn btn-close modal-btn"></button>
+                    <h6>Add new Speed Dial</h6>
+                </div>
+                <span>Name</span><br>
+                <input id="inpName" type="text" placeholder="Firefox"><br>
+                <span>URL</span><br>
+                <input id="inpUrl" type="text" placeholder="https://www.mozilla.org"><br><br>
+                <button id="btnAddSite" class="btn btn-primary">Submit</button>
+            </div>
+        </div>
+        <div id="editSiteModal" class="card custom-modal-body">
+            <!--Edit Selected Site-->
+            <div class="card-body">
+                <div class="card-header">
+                    <button id="btnCloseModalEdit" class="btn btn-close modal-btn"></button>
+                    <h6>Edit Speed Dial</h6>
+                    <span style="display: none;">
+                        index modified: 
+                        <span id="indexSelected"></span>
+                    </span>
+                </div>
+                <span>Name</span><br>
+                <input id="inpEditName" type="text" placeholder="Firefox"><br>
+                <span>URL</span><br>
+                <input id="inpEditUrl" type="text" placeholder="https://www.mozilla.org"><br><br>
+                <div>
+                    <button id="btnDeleteSite" class="btn btn-outline-danger">Delete</button>
+                    <button id="btnEditSite" class="btn btn-primary">Save Changes</button>    
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

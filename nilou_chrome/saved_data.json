@@ -1,0 +1,11 @@
+{
+    "type": "object",
+    "properties": {
+        "sitesssss": {
+            "type": "array",
+            "items": {
+                "type": "object"
+            }
+        }
+    }
+}
